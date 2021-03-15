@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tianyi Ma - Conway's Game of Life Dev Blog</title>
+<link rel="stylesheet" href="project.css">
+<style>
+</style>
+</head>
+<body>
+<h1>Conway's Game of Life Dev Blog</h1>
+<p>
+
+<br><br><b>What is Conway's Game of Life?</b>
+<br><a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">This is a helpful link.</a>
+
+<br><br><b>How to play this game?</b>
+<br>Click on the grids to select the initial set of living cells. Click "start" to start the simulation. Click "Help" to see game rules and a set of example fun combinations.
+
+<br><br><b>What does this web program do?</b>
+<br>The first half is setting up canvas, button, grids and let the user select seeds to start the game. The second half is actually coding up the game rule so that those seeds evolves on your screen. At last there are some misc jobs such as add some pause/restart functionalities, make de-selecting a grid possible, and add help and demo button and demo video.
+
+<br><br><b>What have I learned through this project?</b>
+<br>- HTML/Javascript canvas: set colors, draw lines and rectangles
+<br>- Handling events: clicking on some area of the screen
+<br>- Handling button clicking and setting up page refreshing
+<br>- How to create and manipulate Javascript arrays and objects (associative arrays)
+<br>- Soft design tip***: never modify an array when you are using it in a loop
+
+<br><br><b>What are the main functions of this program?</b>
+<br>- chooseSeeds(x, y) initializes the game by selecting a set of cells
+<br>- erasePrevStep() erases the living cells (see first question for what's a living cell) from the previous step
+<br>- nextGameStep() calculates the next set of living cells based on the current set of living cells based on the game rules.
+<br>- drawNextStep() draws the next set of living cells.
+<br>- nextGameStep() function is the hardest to tackle since it needs to manipulate data in two associative arrays.
+
+<br><br><b>Is this program perfect?</b>
+<br>No. Please give feedback whenever there is a bug, or anything.
+
+</body>
+</html>
